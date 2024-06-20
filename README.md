@@ -1,5 +1,14 @@
 # BabyFootManager
 BabyFoot Manager is a real-time collaborative web application designed for managing and tracking foosball games.
+## Table of Contents
+
+1. [Modules](#modules)
+2. [Architecture](#architecture)
+3. [Database Configuration](#database-configuration)
+4. [Installation and Usage](#installation-and-usage)
+5. [Contribution](#contribution)
+6. [License](#license)
+7. [Support](#support)
 
 ## Modules
 
