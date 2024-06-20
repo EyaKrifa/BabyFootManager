@@ -33,7 +33,6 @@ The application is structured around several key modules:
      );
      ```
    - This table includes fields `id` (primary key), `name` (party name), `status` (party status), and `created_at` (timestamp of party creation).
-
 ### Connecting to the Database in `server/server.js`
 **Configure Database Connection**:
    - Here's an example configuration in your `server.js` file using `pg`:
