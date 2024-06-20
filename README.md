@@ -33,3 +33,24 @@ The application is structured around several key modules:
      );
      ```
    - This table includes fields `id` (primary key), `name` (party name), `status` (party status), and `created_at` (timestamp of party creation).
+
+### Connecting to the Database in `server/server.js`
+**Configure Database Connection**:
+   - Here's an example configuration in your `server.js` file using `pg`:
+     ```javascript
+     const { Pool } = require('pg');
+
+     const pool = new Pool({
+         user: 'your_postgres_user',
+         host: 'localhost',
+         database: 'babyfoot',
+         password: 'your_password',
+         port: 5432,
+     });
+     ```
+     Replace `'your_postgres_user'`, `'localhost'`, `'babyfoot'`, `'your_password'`, and `5432` with your PostgreSQL credentials and database configuration.
+   - This setup utilizes a connection pool (`Pool`) to efficiently manage connections to the `babyfoot` database. Connection pooling helps improve performance by reusing database connections rather than creating new ones for every request.
+
+---
+
+By following these steps, you ensure that your Node.js server can connect to the PostgreSQL database (`babyfoot`) using the provided credentials. Make sure to secure your credentials and adapt the configuration to match your specific environment and setup.
