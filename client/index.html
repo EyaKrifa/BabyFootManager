@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BabyFoot Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>BabyFoot Manager</h1>
+    <div class="layout">
+        <div class="parties">
+            <div>
+                <input type="text" id="partie-name" placeholder="Nouvelle partie...">
+                <button onclick="createPartie()" keypress="">Ajouter</button>
+            </div>
+            <div class="card">
+                <div>
+                    <h2 class="partiesTitle">Les parties</h2>
+                    <h2 id="active-parties-count">0</h2>
+                </div>
+                <div class="scroll">
+                    <ul id="parties-list"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="chatHeader">
+                <h2 class="chatTitle">Chat</h2>
+            </div>
+            <div class="conversation">
+                <p id="messages"></p>
+            </div>
+            <input class="messageInput" type="text" placeholder="Ecriver votre message ici" />
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+
+</html>

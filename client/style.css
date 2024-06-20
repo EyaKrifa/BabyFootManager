@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  div {
+    margin: 10px;
+  }
+  
+  #partie-name {
+    padding: 10px;
+    font-size: 14px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .scroll {
+    height: 300px;
+    overflow-y: auto;
+  }
+  
+  .card {
+    position: relative;
+    min-height: 300px;
+    width: 500px;
+    border-radius: 4%;
+    border: 1px black solid;
+    padding: 20px;
+    box-sizing: border-box;
+  
+    margin-top: 50px;
+  }
+  
+  .partiesTitle {
+    position: absolute;
+    top: -13px; 
+    left: 5px;
+    margin: 0;
+    color: white;
+    background-color: #007bff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5%;
+    font-size: 14px;
+  }
+  
+  #active-parties-count {
+    position: absolute;
+    top: -14px; 
+    right: -5px;
+    margin: 0;
+    color: white;
+    background-color: #007bff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+  }
+  
+  #parties-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 30px; 
+    box-sizing: border-box;
+  }
+  
+  #parties-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #parties-list li:last-child {
+    border-bottom: none;
+  }
+  
+  #parties-list input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #parties-list .delete {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  #parties-list .delete:hover {
+    color: darkred;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .button:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .button:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .button-group .button + .button {
+    margin-left: -1px; 
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 70vh;
+  }
+  .msg {
+    color: blueviolet;
+    font-size: 2rem;
+  }
+  .msgCtn {
+    margin: 1rem 0;
+    color: white;
+    padding: 1rem 1rem;
+    background-color: blueviolet;
+    border-radius: 6px;
+    font-size: 2rem;
+  }
+  .msgForm {
+    display: flex;
+    flex-direction: row;
+  }
+  .input {
+    height: 100%;
+    flex: 4;
+    margin-right: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2px 1rem;
+    font-size: 1.5rem;
+    background-color: aliceblue;
+  }
+  .input:focus {
+    background-color: white;
+  }
+  .btn {
+    height: 5rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: blueviolet;
+    color: whitesmoke;
+    border: none;
+    font-size: 1.6rem;
+  }
+  
+  .layout {
+    display: flex;
+    gap: 180px;
+    padding:20px
+  }
+  
+  .parties {
+    border: 1px gray solid;
+    height: 500px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10%;
+  }
+  
+  .chat {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .chatHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .chatTitle {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .conversation {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: white;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .messageInput {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  /* Styles for sent and received messages */
+  .sendmessage {
+    text-align: right;
+    direction: rtl;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #d1e7dd;
+    border-radius: 5px;
+    max-width: 80%;
+    margin-left: auto;
+  }
+  .recievemessage {
+    text-align: left;
+    direction: ltr;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #f8d7da;
+    border-radius: 5px;
+    max-width: 80%;
+    margin-right: auto;
+  }
+  
