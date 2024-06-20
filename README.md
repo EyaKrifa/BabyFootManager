@@ -49,7 +49,7 @@ The application is structured around several key modules:
      ```
      Replace `'your_postgres_user'`, `'localhost'`, `'babyfoot'`, `'your_password'`, and `5432` with your PostgreSQL credentials and database configuration.
    - This setup utilizes a connection pool (`Pool`) to efficiently manage connections to the `babyfoot` database. Connection pooling helps improve performance by reusing database connections rather than creating new ones for every request.
-   - 
+     
 ## Installation and Usage
 
 ### Installing Dependencies
