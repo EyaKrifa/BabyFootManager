@@ -79,16 +79,13 @@ The application is structured around several key modules:
      npm run dev
      ```
 ## Contribution
-
-1. **Contributions Welcome**:
+**Contributions Welcome**:
    - Contributions to improve BabyFoot Manager are welcome! If you have any suggestions, bug fixes, or new features to propose, please submit a pull request or open an issue to discuss the changes.
 
 ## License
-
-1. **MIT License**:
+**MIT License**:
    - This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Support
-
-1. **Contact the Development Team**:
+**Contact the Development Team**:
    - For any questions, feedback, or additional support regarding BabyFoot Manager, feel free to contact the development team.
