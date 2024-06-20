@@ -50,7 +50,18 @@ The application is structured around several key modules:
      ```
      Replace `'your_postgres_user'`, `'localhost'`, `'babyfoot'`, `'your_password'`, and `5432` with your PostgreSQL credentials and database configuration.
    - This setup utilizes a connection pool (`Pool`) to efficiently manage connections to the `babyfoot` database. Connection pooling helps improve performance by reusing database connections rather than creating new ones for every request.
+   - 
+## Installation and Usage
 
----
+### Installing Dependencies
 
-By following these steps, you ensure that your Node.js server can connect to the PostgreSQL database (`babyfoot`) using the provided credentials. Make sure to secure your credentials and adapt the configuration to match your specific environment and setup.
+1. **Clone the repository**:
+     ```bash
+     git clone https://github.com/your-username/babyfoot-manager.git
+     ```
+2. **Install dependencies:**:
+$ cd BabyFootManager
+$ npm install
+
+3. **Starting the application:**:
+$ npm run dev
