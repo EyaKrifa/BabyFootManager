@@ -57,11 +57,17 @@ The application is structured around several key modules:
 
 1. **Clone the repository**:
      ```bash
-     git clone https://github.com/your-username/babyfoot-manager.git
+     git clone https://github.com/EyaKrifa/BabyFootManager.git
      ```
 2. **Install dependencies:**:
-$ cd BabyFootManager
-$ npm install
-
+   ```bash
+     cd BabyFootManager
+     ```
+      ```bash
+     npm install
+     ```
 3. **Starting the application:**:
-$ npm run dev
+     ```bash
+     npm run dev
+     ```
+
